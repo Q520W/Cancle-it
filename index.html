@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+	<div id="title">
+		<div class="level"><b>Round<span id="level">1</span></b></div>
+		<div><b>Target:<span id="target"></span></b></div>
+		<div><b class="left">Score :<span id="score">0</span></b></div>
+	</div>
+	<div id="gameover">
+		<div class="gameover">
+			<p>You have pass<span id="end_level"></span>Round！</p>
+			<p>GAME OVER!</p>
+			<a href="javascript:Game.start()">Play Again!</a>
+		</div>
+	</div>
+	<div id="pass">
+		<p>PASS!</p>
+		<span id="addScore">SCORE:+0</span><br />
+		<a href="javascript:Game.pass()">Next One</a>
+	</div>
+</body>
+
+<script src='game.js'></script>
+
+</html>
